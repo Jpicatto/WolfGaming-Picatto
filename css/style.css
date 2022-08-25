@@ -435,12 +435,38 @@ h6 {
 
 
 
+.gradient {
+  font-size: 32px;
+  margin-left: 16px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  background-image: linear-gradient( to top right, #00f260
+  , #0575e6);
+}
 
 
+.gradient:hover {
+  transform: scale(2);
+}
 
 
+.copy {
+  animation-duration: 10s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+    width: 300%
+  }
 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
 
