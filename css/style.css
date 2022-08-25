@@ -296,9 +296,8 @@ h6 {
 
 .contenedor > * {
   padding: 20px;
-  border: 1px solid
+  border: 1px solid;
 }
-
 
 .contenedor {
   display: grid;
@@ -310,9 +309,8 @@ h6 {
     "navbar"
     "content"
     "sidebar"
-    "footer";}
-
-
+    "footer";
+}
 
 .imagen {
   grid-area: imagen;
@@ -334,75 +332,41 @@ h6 {
   grid-area: footer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* pie de pagina */
-.pie-pagina{
+.pie-pagina {
   width: 100%;
-  background-color:#161616;
+  background-color: #161616;
   margin-bottom: 0px;
 }
-.pie-pagina .grupo-1{
+.pie-pagina .grupo-1 {
   width: 100%;
   max-width: 1300px;
   margin: auto;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap:50px;
+  grid-gap: 50px;
   padding: 45px 0px;
 }
-.pie-pagina .grupo-1 .box figure{
+.pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content:flex-start;
-  align-items:flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.pie-pagina .grupo-1 .box figure img{
+.pie-pagina .grupo-1 .box figure img {
   width: 30px;
 }
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+.pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+.pie-pagina .grupo-1 .red-social a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -414,26 +378,24 @@ h6 {
   text-align: center;
   transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+.pie-pagina .grupo-1 .red-social a:hover {
   color: #06f968;
 }
-.pie-pagina .grupo-2{
+.pie-pagina .grupo-2 {
   background-color: black;
   padding: 10px 0px;
   width: 100%;
   text-align: center;
   color: #fff;
 }
-.pie-pagina .grupo-2 small{
+.pie-pagina .grupo-2 small {
   font-size: 10px;
 }
 
-.redes{
+.redes {
   width: 50px;
   height: 50px;
 }
-
-
 
 .gradient {
   font-size: 32px;
@@ -441,15 +403,12 @@ h6 {
   text-decoration: none;
   color: white;
   position: relative;
-  background-image: linear-gradient( to top right, #00f260
-  , #0575e6);
+  background-image: linear-gradient(to top right, #00f260, #0575e6);
 }
-
 
 .gradient:hover {
   transform: scale(2);
 }
-
 
 .copy {
   animation-duration: 10s;
@@ -459,7 +418,7 @@ h6 {
 @keyframes slidein {
   from {
     margin-left: 80%;
-    width: 300%
+    width: 300%;
   }
 
   to {
@@ -498,111 +457,120 @@ h6 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*extra large devices (large desktop, 1200px and up)*/
 @media (max-width: 1200px) {
 }
 
 /* large devices (large desktop, 992px and up)*/
 @media (max-width: 992px) {
+  body {
+    padding-top: 70px;
+  }
+  .header {
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    list-style: none;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100 - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+    font-family: menene;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    transition: 0.1s;
+    border-bottom-style: solid;
+    border-color: #06f968;
+    color: #e2e2e2;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .portada1 {
+    width: 100%;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin-top: 0.1em;
+    justify-content: space-around;
+  }
+
+  h3 {
+    color: white;
+    font-size: 1em;
+    font-family: menene_bold_2;
+    text-shadow: 0 0 0.1em #22ff95;
+  }
+
+  h4 {
+    color: #06f96b;
+    font-size: 4.6rem;
+    font-family: menene;
+    text-shadow: 0 0 0.3em #22ff95;
+    line-height: 80px;
+  }
+
+  h5 {
+    color: white;
+    font-size: 1.5em;
+    font-family: menene_light;
+    text-align: justify;
+  }
+
+  h6 {
+    color: white;
+    font-size: 1.5em;
+    font-family: menene_light;
+  }
+
+  span {
+    color: white;
+    font-size: 1.3em;
+    font-family: menene_light;
+  }
+
+  .verde {
+    color: #06f968;
+  }
+
+  .turquesa {
+    color: aqua;
+  }
 }
 
 /*medium devices (tablets, 768px and up)*/
@@ -645,7 +613,7 @@ h6 {
   .nav-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
-    font-family: menene ;
+    font-family: menene;
   }
 
   .nav-menu-link:hover,
@@ -653,7 +621,7 @@ h6 {
     transition: 0.1s;
     border-bottom-style: solid;
     border-color: #06f968;
-    color: #E2E2E2;
+    color: #e2e2e2;
   }
 
   .nav-toggle {
@@ -670,7 +638,7 @@ h6 {
     display: flex;
     flex-direction: column;
     padding: 1em;
-    margin-top: .1em;
+    margin-top: 0.1em;
     justify-content: space-around;
   }
 
@@ -680,10 +648,10 @@ h6 {
     font-family: menene_bold_2;
     text-shadow: 0 0 0.1em #22ff95;
   }
-  
+
   h4 {
     color: #06f96b;
-    font-size: 5.6rem;
+    font-size: 3.6rem;
     font-family: menene;
     text-shadow: 0 0 0.3em #22ff95;
     line-height: 80px;
@@ -693,9 +661,9 @@ h6 {
     color: white;
     font-size: 1.5em;
     font-family: menene_light;
-    text-align:justify;
+    text-align: justify;
   }
-  
+
   h6 {
     color: white;
     font-size: 1.5em;
@@ -707,7 +675,7 @@ h6 {
     font-size: 1.3em;
     font-family: menene_light;
   }
-  
+
   .verde {
     color: #06f968;
   }
@@ -719,4 +687,111 @@ h6 {
 
 /*small devices (landscape phones,576px and up)*/
 @media (max-width: 576px) {
+body {  padding-top: 70px;
+}
+.header {
+  height: 60px;
+}
+
+.logo {
+  font-size: 25px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.nav-menu {
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  list-style: none;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 20px 0;
+  height: calc(100 - 60px);
+  overflow-y: auto;
+
+  left: 100%;
+  transition: left 0.3s;
+}
+
+.nav-menu-item {
+  line-height: 70px;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-family: menene;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  transition: 0.1s;
+  border-bottom-style: solid;
+  border-color: #06f968;
+  color: #e2e2e2;
+}
+
+.nav-toggle {
+  display: block;
+}
+
+.nav-menu_visible {
+  left: 0;
+}
+
+.portada1 {
+  width: 100%;
+  height: 35em;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  margin-top: 0.1em;
+  justify-content: space-around;
+}
+
+h3 {
+  color: white;
+  font-size: 1em;
+  font-family: menene_bold_2;
+  text-shadow: 0 0 0.1em #22ff95;
+}
+
+h4 {
+  color: #06f96b;
+  font-size: 2.6rem;
+  font-family: menene;
+  text-shadow: 0 0 0.3em #22ff95;
+  line-height: 80px;
+}
+
+h5 {
+  color: white;
+  font-size: 1.5em;
+  font-family: menene_light;
+  text-align: justify;
+}
+
+h6 {
+  color: white;
+  font-size: 1.5em;
+  font-family: menene_light;
+}
+
+span {
+  color: white;
+  font-size: 1.0em;
+  font-family: menene_light;
+}
+
+.verde {
+  color: #06f968;
+}
+
+.turquesa {
+  color: aqua;
+}
 }
