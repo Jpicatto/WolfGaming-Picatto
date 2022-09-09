@@ -76,26 +76,20 @@ span {
 }
 
 h1 {
-  color: #f8efef;
-  font-size: 20px;
-  font-family: menene_light;
-  text-transform: capitalize;
-}
-
-h3 {
   color: white;
   font-size: 1.6em;
   font-family: menene_bold_2;
   text-shadow: 0 0 0.3em #22ff95;
 }
-
-h4 {
+h2 {
   color: #06f96b;
   font-size: 10.6rem;
   font-family: menene;
   text-shadow: 0 0 0.3em #22ff95;
   line-height: 135px;
 }
+
+
 
 h5 {
   color: white;
@@ -405,38 +399,12 @@ li:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*extra large devices (large desktop, 1200px and up)*/
-@media (max-width: 1200px) {
-}
-
 /* large devices (large desktop, 992px and up)*/
 @media (max-width: 992px) {
   body {
     padding-top: 70px;
   }
-  .header {
+  .header1 {
     height: 60px;
   }
 
@@ -446,7 +414,7 @@ li:hover {
     line-height: 60px;
   }
 
-  .nav-menu {
+  .nav-menu1 {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
@@ -464,29 +432,29 @@ li:hover {
     transition: left 0.3s;
   }
 
-  .nav-menu-item {
+  .nav-menu-item1 {
     line-height: 70px;
   }
 
-  .nav-menu-link {
+  .nav-menu-link1 {
     padding: 8px 12px;
     border-radius: 3px;
     font-family: menene;
   }
 
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
+  .nav-menu-link1:hover,
+  .nav-menu-link1_active {
     transition: 0.1s;
     border-bottom-style: solid;
     border-color: #06f968;
     color: #e2e2e2;
   }
 
-  .nav-toggle {
+  .nav-toggle1 {
     display: block;
   }
 
-  .nav-menu_visible {
+  .nav-menu1_visible {
     left: 0;
   }
 
@@ -500,14 +468,14 @@ li:hover {
     justify-content: space-around;
   }
 
-  h3 {
+  h1 {
     color: white;
     font-size: 1em;
     font-family: menene_bold_2;
     text-shadow: 0 0 0.1em #22ff95;
   }
 
-  h4 {
+  h2 {
     color: #06f96b;
     font-size: 4.6rem;
     font-family: menene;
@@ -545,46 +513,7 @@ li:hover {
 
 /*medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) {
-  body {
-    padding-top: 70px;
-  }
-  .header {
-    height: 60px;
-  }
 
-  .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    list-style: none;
-    background-color: black;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    height: calc(100 - 60px);
-    overflow-y: auto;
-
-    left: 100%;
-    transition: left 0.3s;
-  }
-
-  .nav-menu-item {
-    line-height: 70px;
-  }
-
-  .nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px;
-    font-family: menene;
-  }
 
   .nav-menu-link:hover,
   .nav-menu-link_active {
