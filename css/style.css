@@ -3,18 +3,27 @@
   padding: 0;
 }
 
+html {
+  width: 100vw;
+  height: 100vh;
+}
 
 body {
   font-family: sans-serif;
-  padding: 0;
-  background-color: #161616;
+  background-color: #161616 !important;
   color: #E2E2E2;
+  z-index: 99999;
 }
 
 #index {
   font-family: sans-serif;
-  padding: 80px 20px 0;
-  background: url(../image/lobo_fondo2.png)
+  padding: 80px  0;
+  background: url(../image/lobo_fondo2.png);
+}
+
+#nosotros {
+  margin-top: 80px;
+
 }
 
 @font-face {
@@ -75,6 +84,12 @@ span {
   margin: .33rem;
 }
 
+article {
+  color: #E2E2E2;
+}
+
+
+
 h1 {
   color: white;
   font-size: 1.6em;
@@ -91,18 +106,6 @@ h2 {
 
 
 
-h5 {
-  color: white;
-  font-size: 1.5em;
-  font-family: menene_light;
-}
-
-h6 {
-  color: white;
-  font-size: 1.5em;
-  font-family: menene_light;
-}
-
 li {
   transition: all .5s;
 }
@@ -111,9 +114,14 @@ li:hover {
   transform: scale(1.20, 1.20);
 }
 
+.titulo2 {
+  z-index: -999;
+}
 
 
-
+.parrafo-central {
+  width: 50%;
+}
 
 .header1 {
   background-color: #000000;
@@ -122,12 +130,14 @@ li:hover {
   width: 100%;
   top: 0;
   left: 0;
+  margin-bottom: 20px;
 }
 
 .nav1 {
   display: flex;
   justify-content: space-between;
   max-width: 992px;
+  height: 80px;
   margin: 0 auto;
 }
 
@@ -197,7 +207,7 @@ li:hover {
   justify-content: space-between;
 }
 
-.container {
+.container_custom {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -208,7 +218,7 @@ li:hover {
   display: flex;
   flex-direction: row-reverse;
   padding: 0.93em;
-  margin-top: 90px;
+  margin-top: 80px;
   justify-content: center;
   align-content: space-between;
 }
@@ -281,87 +291,27 @@ li:hover {
 .form__title {
   text-align: center;
   font-size: 1.5em;
-  margin-bottom: 4.5em;
+  margin-bottom: auto;
 }
 
-.footer {
-  position:absolute;
-  width: 100vw;
-  bottom: 1px;
-  color: #000804;
-  background-color: #E2E2E2;
-  text-align: center;
-  height: 4vh;
-}
+
 
 
 /* cuerpo */
 
 
 /* pie de pagina */
-.pie-pagina {
-  width: 100%;
-  background-color: #161616;
-  margin-bottom: 0px;
-}
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1300px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.pie-pagina .grupo-1 .box figure img {
-  width: 30px;
-}
-.pie-pagina .grupo-1 .box h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: black;
+.footer {
+  position:absolute;
+  width: 100vw;
+  bottom: 0;
+  color: #000804;
+  background-color:#161616#160101;
   text-align: center;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: #06f968;
-}
-.pie-pagina .grupo-2 {
-  background-color: black;
-  padding: 10px 0px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-.pie-pagina .grupo-2 small {
-  font-size: 10px;
+  height: 4vh;
+  margin-bottom: 15px;
 }
 
-.redes {
-  width: 50px;
-  height: 50px;
-}
 
 .gradient {
   font-size: 32px;
@@ -369,31 +319,41 @@ li:hover {
   text-decoration: none;
   color: white;
   position: relative;
-  background-image: linear-gradient(to top right, #00f260, #0575e6);
+  background-image: linear-gradient(to top right, #06f968, #010e06);
+  animation-name: desaparecer;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
 }
 
 .gradient:hover {
-  transform: scale(2);
+  transform: scale(1.5);
 }
+
 
 .copy {
-  animation-duration: 10s;
-  animation-name: slidein;
+  animation-name: desaparecer;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  color: #06f968;
 }
 
-@keyframes slidein {
-  from {
-    margin-left: 80%;
+@keyframes desaparecer {
+  0% {
+    opacity: 0;
   }
-
-  to {
-    margin-left: 0%;
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .50;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
   }
 }
-
-
-
-
 
 
 
@@ -402,16 +362,10 @@ li:hover {
 /* large devices (large desktop, 992px and up)*/
 @media (max-width: 992px) {
   body {
-    padding-top: 70px;
+    padding-top: 10px;
   }
   .header1 {
     height: 60px;
-  }
-
-  .logo {
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
   }
 
   .nav-menu1 {
@@ -427,7 +381,6 @@ li:hover {
     padding: 20px 0;
     height: calc(100 - 60px);
     overflow-y: auto;
-
     left: 100%;
     transition: left 0.3s;
   }
@@ -468,33 +421,22 @@ li:hover {
     justify-content: space-around;
   }
 
+
   h1 {
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: menene_bold_2;
-    text-shadow: 0 0 0.1em #22ff95;
+    text-shadow: 0 0 1em #22ff95;
   }
 
   h2 {
     color: #06f96b;
-    font-size: 4.6rem;
+    font-size: 6.8rem;
     font-family: menene;
     text-shadow: 0 0 0.3em #22ff95;
     line-height: 80px;
   }
 
-  h5 {
-    color: white;
-    font-size: 1.5em;
-    font-family: menene_light;
-    text-align: justify;
-  }
-
-  h6 {
-    color: white;
-    font-size: 1.5em;
-    font-family: menene_light;
-  }
 
   span {
     color: white;
@@ -515,182 +457,15 @@ li:hover {
 @media (max-width: 768px) {
 
 
-  .nav-menu-link:hover,
-  .nav-menu-link_active {
-    transition: 0.1s;
-    border-bottom-style: solid;
-    border-color: #06f968;
-    color: #e2e2e2;
-  }
-
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-menu_visible {
-    left: 0;
-  }
-
-  .portada1 {
-    width: 100%;
-    height: 40em;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    margin-top: 0.1em;
-    justify-content: space-around;
-  }
-
-  h3 {
-    color: white;
-    font-size: 1em;
-    font-family: menene_bold_2;
-    text-shadow: 0 0 0.1em #22ff95;
-  }
-
-  h4 {
-    color: #06f96b;
-    font-size: 3.6rem;
-    font-family: menene;
-    text-shadow: 0 0 0.3em #22ff95;
-    line-height: 80px;
-  }
-
-  h5 {
-    color: white;
-    font-size: 1.5em;
-    font-family: menene_light;
-    text-align: justify;
-  }
-
-  h6 {
-    color: white;
-    font-size: 1.5em;
-    font-family: menene_light;
-  }
-
-  span {
-    color: white;
-    font-size: 1.3em;
-    font-family: menene_light;
-  }
-
-  .verde {
-    color: #06f968;
-  }
-
-  .turquesa {
-    color: aqua;
+  h2 {
+    font-size: 6rem;
   }
 }
 
 /*small devices (landscape phones,576px and up)*/
 @media (max-width: 576px) {
-body {  padding-top: 70px;
-}
-.header {
-  height: 60px;
-}
 
-.logo {
-  font-size: 25px;
-  padding: 0 20px;
-  line-height: 60px;
-}
-
-.nav-menu {
-  flex-direction: column;
-  align-items: center;
-  margin-right: 20px;
-  list-style: none;
-  background-color: black;
-  position: fixed;
-  left: 0;
-  top: 60px;
-  width: 100%;
-  padding: 20px 0;
-  height: calc(100 - 60px);
-  overflow-y: auto;
-
-  left: 100%;
-  transition: left 0.3s;
-}
-
-.nav-menu-item {
-  line-height: 70px;
-}
-
-.nav-menu-link {
-  padding: 8px 12px;
-  border-radius: 3px;
-  font-family: menene;
-}
-
-.nav-menu-link:hover,
-.nav-menu-link_active {
-  transition: 0.1s;
-  border-bottom-style: solid;
-  border-color: #06f968;
-  color: #e2e2e2;
-}
-
-.nav-toggle {
-  display: block;
-}
-
-.nav-menu_visible {
-  left: 0;
-}
-
-.portada1 {
-  width: 100%;
-  height: 35em;
-  display: flex;
-  flex-direction: column;
-  padding: 1em;
-  margin-top: 0.1em;
-  justify-content: space-around;
-}
-
-h3 {
-  color: white;
-  font-size: 1em;
-  font-family: menene_bold_2;
-  text-shadow: 0 0 0.1em #22ff95;
-}
-
-h4 {
-  color: #06f96b;
-  font-size: 2.6rem;
-  font-family: menene;
-  text-shadow: 0 0 0.3em #22ff95;
-  line-height: 80px;
-}
-
-h5 {
-  color: white;
-  font-size: 1.5em;
-  font-family: menene_light;
-  text-align: justify;
-}
-
-h6 {
-  color: white;
-  font-size: 1.5em;
-  font-family: menene_light;
-}
-
-span {
-  color: white;
-  font-size: 1.0em;
-  font-family: menene_light;
-}
-
-.verde {
-  color: #06f968;
-}
-
-.turquesa {
-  color: aqua;
-}
+  h2 {
+    font-size: 4rem;
+  }
 }
